@@ -1,0 +1,58 @@
+       Day 2
+ 
+1.Aws services used for read/write of constantly changing data ?
+
+Amazon Glacier  :- used for data archiving
+Amazon RDS    :- read/write
+AWS snowball  :- Large scale data transfers
+Amazon Redshift :- write/read
+Amazon EFS :- file system changeing data continously
+
+2 Amazon EC2 Auto Scaling
+
+Amazon EC2 Auto Scaling enables you to automatically add or
+remove Amazon EC2 instances in response to changing application demand. 
+
+  Amazon EC2 Auto Scaling, you can use two approaches
+
+* Dynamic scaling responds to changing demand. 
+* Predictive scaling automatically schedules the right 
+  number of Amazon EC2 instances based on predicted demand.
+
+3.Elastic Load Balancing:-automatically distributes incoming application traffic across 
+  multiple resources, such as Amazon EC2 instances. 
+
+4.Which AWS service is the best choice for publishing messages to subscribers?
+  Amazon Simple Notification Service (Amazon SNS).
+
+5.Amazon Simple Queue Service (Amazon SQS) is a message queuing service.
+
+6.When determining the right Region for your services, data, and applications, consider the following four business factors.
+
+* Compliance with data governance and legal requirements:
+    Depending on your company and location, you might need to run your data out of specific areas 
+* Proximity to your customers:
+     Selecting a Region that is close to your customers will help you to get content to them faster.
+* Available services within a Region:
+     Sometimes, the closest Region might not have all the features that you want to offer to customers. 
+     AWS is frequently innovating by creating new services and expanding on features within existing services.
+* Pricing:
+     The cost of services can vary from region to region.
+
+7.Availability Zones:-An Availability Zone is a single data center or a group of data centers within a Region.
+      Availability Zones are located tens of miles apart from each other.
+
+8.Edge locations:-An edge location is a site that Amazon CloudFront uses to store cached copies of your content closer to your customers for faster delivery.
+
+9.Ways to interact with AWS services
+*AWS Management Console
+*AWS Command Line Interface (AWS CLI)
+*software development kits (SDKs
+
+10.AWS Elastic Beanstalk
+   With AWS Elastic Beanstalk, you provide code and configuration settings,
+   and Elastic Beanstalk deploys the resources necessary to perform the following tasks:
+*Adjust capacity
+* Load balancing
+* Automatic scaling
+* Application health monitoring
