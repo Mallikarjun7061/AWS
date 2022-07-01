@@ -1,0 +1,131 @@
+   Module 5
+1.Instance stores
+->  An instance store provides temporary block-level storage for an Amazon EC2 instance.
+
+2.Amazon Elastic Block Store (Amazon EBS)
+->Is a service that provides block-level storage volumes that you can use with Amazon EC2 instances. 
+ 
+->If you stop or terminate an Amazon EC2 instance, all the data on the attached EBS volume remains available.
+
+->An EBS snapshot is an incremental backup. This means that the first backup taken of a volume copies all the data. 
+
+3.Amazon Simple Storage Service (Amazon S3) 
+->  Is a service that provides object-level storage.
+->  Amazon S3 stores data as objects in buckets.
+->  You can upload any type of file to Amazon S3, such as images, videos, text files, and so on. 
+->  The maximum file size for an object in Amazon S3 is 5 TB.
+
+
+a)  S3 Standard
+–
+Designed for frequently accessed data
+Stores data in a minimum of three Availability Zones
+
+ S3 Standard provides high availability for objects.
+
+b)  S3 Standard-Infrequent Access (S3 Standard-IA)
+–
+Ideal for infrequently accessed data
+Similar to S3 Standard but has a lower storage price and higher retrieval price
+
+ S3 Standard-IA is ideal for data infrequently accessed but requires high availability when needed.
+
+c)  S3 One Zone-Infrequent Access (S3 One Zone-IA)
+–
+Stores data in a single Availability Zone
+Has a lower storage price than S3 Standard-IA
+
+ Compared to S3 Standard and S3 Standard-IA, which store data in a minimum of three Availability Zones,
+ S3 One Zone-IA stores data in a single Availability Zone.
+
+d)  S3 Intelligent-Tiering
+–
+Ideal for data with unknown or changing access patterns
+Requires a small monthly monitoring and automation fee per object
+
+ In the S3 Intelligent-Tiering storage class, Amazon S3 monitors objects’ access patterns.
+
+e)  S3 Glacier
+–
+Low-cost storage designed for data archiving
+Able to retrieve objects within a few minutes to hours
+ 
+ S3 Glacier is a low-cost storage class that is ideal for data archiving.
+
+f)  S3 Glacier Deep Archive
+–
+Lowest-cost object storage class ideal for archiving
+Able to retrieve objects within 12 hours
+
+ When deciding between Amazon S3 Glacier and Amazon S3 Glacier Deep Archive, 
+ consider how quickly you need to retrieve archived objects.
+
+4.Amazon Elastic File System (Amazon EFS) 
+-> Is a scalable file system used with AWS Cloud services and on-premises resources.
+
+           *An Amazon EBS
+-> volume stores data in a single Availability Zone. 
+-> To attach an Amazon EC2 instance to an EBS volume, both the Amazon EC2 instance
+   and the EBS volume must reside within the same Availability Zone.
+
+            *Amazon EFS
+-> Is a regional service. It stores data in and across multiple Availability Zones. 
+-> The duplicate storage enables you to access data concurrently from all the Availability Zones in the Region where a file system is located.
+   Additionally, on-premises servers can access Amazon EFS using AWS Direct Connect.
+
+5.Relational databases
+-> In a relational database, data is stored in a way that relates it to other pieces of data.
+
+-> Relational databases use structured query language (SQL) to store and query data.
+
+6.Amazon Relational Database Service (Amazon RDS)
+-> Is a service that enables you to run relational databases in the AWS Cloud.
+ 
+7.Amazon RDS database engines
+-> Amazon RDS is available on six database engines, which optimize for memory, performance, or input/output (I/O). Supported database engines include:
+
+*Amazon Aurora
+*PostgreSQL
+*MySQL
+*MariaDB
+*Oracle Database
+*Microsoft SQL Server
+
+****Amazon Aurora
+-> Amazon Aurora is an enterprise-class relational database.
+-> It is compatible with MySQL and PostgreSQL relational databases.
+-> It is up to five times faster than standard MySQL databases.
+-> Three times faster than standard PostgreSQL databases.
+-> Amazon Aurora helps to reduce your database costs by reducing unnecessary input/output (I/O) operations.
+-> Consider Amazon Aurora if your workloads require high availability. 
+-> It replicates six copies of your data across three Availability Zones and continuously backs up your data to Amazon S3.
+
+8.Nonrelational databases are sometimes referred to as “NoSQL databases”.
+
+9.Amazon DynamoDB
+-> Amazon DynamoDB is a key-value database service. It delivers single-digit millisecond performance at any scale.
+
+Features
+*Serverless:-do not have to provision, patch, or manage servers. 
+*Automatic scaling:-DynamoDB automatically scales to adjust for changes in capacity.
+
+10.Amazon Redshift
+-> Amazon Redshift is a data warehousing service that you can use for big data analytics.
+
+11.AWS Database Migration Service (AWS DMS)
+-> Enables you to migrate relational databases, nonrelational databases, and other types of data stores.
+
+Other use cases for AWS DMS
+*Development and test database migrations.
+*Database consolidation.
+*Continuous replication
+
+12.Additional database services
+*Amazon DocumentDB
+*Amazon Neptune
+*Amazon Quantum Ledger Database (Amazon QLDB)
+*Amazon Managed Blockchain
+*Amazon ElastiCache
+*Amazon DynamoDB Accelerator
+
+
